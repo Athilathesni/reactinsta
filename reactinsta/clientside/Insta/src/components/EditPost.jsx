@@ -16,7 +16,7 @@ const EditPost = () => {
 
   const getPostDetails = async () => {
     try {
-      const res = await axios.get(`http://localhost:3005/api/getPost/${id}`, {
+      const res = await axios.get(`http://localhost:3000/api/getPost/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       if (res.status === 200) {
@@ -36,28 +36,6 @@ const EditPost = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // const formData = new FormData();
-    // formData.append("caption", caption);
-    // newImages.forEach((image) => formData.append("images", image));
-
-    // try {
-    //   const res = await axios.put(
-    //     `http://localhost:3005/api/updatePost/${postId}`,
-    //     formData,
-    //     {
-    //       headers: {
-    //         Authorization: `Bearer ${token}`,
-    //         "Content-Type": "multipart/form-data",
-    //       },
-    //     }
-    //   );
-    //   if (res.status === 200) {
-    //     alert("Post updated successfully!");
-    //     navigate("/");
-    //   }
-    // } catch (error) {
-    //   console.error(error);
-    // }
   };
 
   useEffect(() => {

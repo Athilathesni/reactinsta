@@ -12,7 +12,7 @@ const Verify = () => {
     e.preventDefault()
     try {
       console.log(email)
-      const res=await axios.post("http://localhost:3005/api/verify",{email})
+      const res=await axios.post("http://localhost:3000/api/verify",{email})
       console.log(res)
       if (res.status==200) {
         alert(res.data.msg)
@@ -27,18 +27,6 @@ const Verify = () => {
   }
 
   return (
-//     <div className="verify-container">
-//       <h1>Email Verification</h1>
-//       <form onSubmit={handleSubmit}>
-//         <div className="form-group">
-//           <label>Email Address:</label>
-//           <input  type="email"  name="email"  value={email}  onChange={handleChange}  required  placeholder="Enter your email" />
-//         </div>
-//         <button type="submit" className="btn-verify">  Verify </button>
-//       </form>
-//     </div>
-//   )
-// }
 <div className="email">
 <h2 className="h2">Email Verification</h2>
 <form onSubmit={handleSubmit}>

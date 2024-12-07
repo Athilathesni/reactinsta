@@ -21,7 +21,7 @@ const Register = () => {
     e.preventDefault()
     try {
       console.log(formData)
-      const res=await axios.post("http://localhost:3005/api/adduser",formData)
+      const res=await axios.post("http://localhost:3000/api/adduser",formData)
       console.log(res)
       if(res.status==201){
         alert(res.data.msg)

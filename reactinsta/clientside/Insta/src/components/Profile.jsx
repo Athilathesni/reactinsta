@@ -15,7 +15,7 @@ const Profile = () => {
       navigate("/login");
     } else {
       try {
-        const res = await axios.get("http://localhost:3005/api/getuserData", {
+        const res = await axios.get("http://localhost:3000/api/getuserData", {
           headers: { Authorization: `Bearer ${token}` },
         });
         if (res.status === 200) {
@@ -34,7 +34,7 @@ const Profile = () => {
 
   const getPosts = async () => {
     try {
-      const res = await axios.get("http://localhost:3005/api/getPosts", {
+      const res = await axios.get("http://localhost:3000/api/getPosts", {
         headers: { Authorization: `Bearer ${token}` },
       });
       if (res.status === 200) {
@@ -56,7 +56,7 @@ const Profile = () => {
       navigate("/login");
     } else {
       try {
-        const res = await axios.delete("http://localhost:3005/api/deleteData", {
+        const res = await axios.delete("http://localhost:3000/api/deleteData", {
           headers: { Authorization: `Bearer ${token}` },
         });
         if (res.status === 200) {

@@ -31,28 +31,6 @@ const Nav = ({user}) => {
   }
 
   return (
-//     <nav className="navbar">
-//       <div className="logo">Logo</div>
-//       <div className="right">
-        
-//         <span className="username">{user}</span>
-//         <div className="dropdown">
-//           <button onClick={toggleDropdown} className="dropbtn">
-//             ▼
-//           </button>
-//           {isDropdownVisible && (
-//             <div className="dropdowncontent">
-//               <a href="/profile">Profile</a>
-//               <a onClick={handleLogout} style={{ cursor: "pointer" }}>
-//                 Logout
-//               </a>
-//             </div>
-//           )}
-//         </div>
-//       </div>
-//     </nav>
-//   )
-// }
 <nav className="navbar">
       <div>
         <img src="insta.webp" alt="" />

@@ -29,7 +29,7 @@ const AddData = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:3005/api/adduserData",
+        "http://localhost:3000/api/adduserData",
         { ...formData },
         {
           headers: { Authorization: `Bearer ${token}` },
