@@ -82,7 +82,7 @@ const EditUserData = () => {
     <div className="edit-data-container">
       <form className="edit-data-form" onSubmit={handleSubmit}>
         <h2>Edit Your Details</h2>
-        <div className="form-group">
+        <div className="form4-group">
           <label htmlFor="nickname">Nickname</label>
           <input
             type="text"
@@ -93,7 +93,7 @@ const EditUserData = () => {
             required
           />
         </div>
-        <div className="form-group">
+        <div className="form4-group">
           <label htmlFor="dob">Date of Birth</label>
           <input
             type="date"
@@ -104,7 +104,7 @@ const EditUserData = () => {
             required
           />
         </div>
-        <div className="form-group">
+        <div className="form4-group">
           <label htmlFor="note">Note</label>
           <input
             type="text"

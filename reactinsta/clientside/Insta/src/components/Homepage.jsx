@@ -48,21 +48,21 @@ const HomePage = ({ setUser }) => {
 
   return (
     <div className="homepage-container">
-      <div className="post-grid">
+      <div className="post3-grid">
         {posts.length === 0 ? (
           <div>No posts available</div>
         ) : (
           posts.map((post) => (
             <Link to={`/viewPost/${post._id}`}>
-                <div key={post._id} className="post-card">
+                <div key={post._id} className="post3-card">
             {post.images && post.images.length > 0 && (
               <img
                 src={post.images[0]}
                 alt={post.caption}
-                className="post-image"
+                className="post3-image"
               />
             )}
-            <div className="post-caption">{post.caption}</div>
+            <div className="post3-caption">{post.caption}</div>
           </div>
           </Link>  
           ))

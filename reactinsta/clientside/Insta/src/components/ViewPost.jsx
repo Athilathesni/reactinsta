@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams, useNavigate } from "react-router-dom";
-import "./ViewUserPost.css";
+import "./ViewPost.css";
 
 const ViewPost = () => {
   const { id } = useParams();
@@ -33,10 +33,10 @@ const ViewPost = () => {
   if (!post) return <div>Loading...</div>;
 
   return (
-    <div className="view-post-container">
-      <h2>Post Details</h2>
-      <div className="post-details">
-        <div className="post-images">
+    <div className="view-post1-container">
+      <h2>𝓓𝓔𝓣𝓐𝓘𝓛𝓢</h2>
+      <div className="post1-details">
+        <div className="post1-images">
           {post.images.map((image, index) => (
             <img
               key={index}
@@ -46,7 +46,7 @@ const ViewPost = () => {
             />
           ))}
         </div>
-        <div className="post-info">
+        <div className="post1-info">
           <h3>{post.caption}</h3>
           <p>{post.description}</p>
           <p>

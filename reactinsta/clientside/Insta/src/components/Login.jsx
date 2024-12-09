@@ -38,13 +38,14 @@ const Login = () => {
  <div className="login-page">
 <div className="login-container">
   <div className="login-header">
-    <h1>Welcome Back!</h1>
-    <p>Please log in to your account</p>
+    <h1><i>𝖎𝖓𝖘𝖙𝖆𝖗𝖌𝖗𝖆𝖒</i></h1>
+    {/* <p>Please log in to your account</p> */}
   </div>
   <form onSubmit={handleSubmit}>
     <div className="form-group">
-      <label>Email Address</label>
+      {/* <label>Email Address</label> */}
       <input
+      className="in1"
         type="email"
         name="email"
         value={formData.email}
@@ -54,8 +55,9 @@ const Login = () => {
       />
     </div>
     <div className="form-group">
-      <label>Password</label>
+      {/* <label>Password</label> */}
       <input
+      className="in1"
         type="password"
         name="pass"
         value={formData.pass}
@@ -68,17 +70,19 @@ const Login = () => {
       Login
     </button>
   </form>
+  <div className="or">____________ OR ____________</div>
   <div className="form-footer">
     <Link to={"/#"} className="forgot-password-link">
       Forgot Password?
     </Link>
-    <span className="separator">|</span>
-    <Link to={"/verify"} className="signup-link">
-      Sign Up
-    </Link>
+    {/* <span className="separator">|</span> */}
   </div>
 </div>
-</div>
+<div className="und">
+  <Link to={"/verify"} className="signup-link"><span className="sp">Don't have an account?</span>
+      Sign Up
+    </Link></div>
+    </div>
 );
 } 
 

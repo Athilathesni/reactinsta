@@ -78,7 +78,7 @@ const Profile = () => {
     <div className="container">
       <div className="left-side">
         <form>
-          <div className="form-group">
+          <div className="form5-group">
             <div className="image">
               <img src="" alt="" />
             </div>
@@ -120,7 +120,7 @@ const Profile = () => {
               <img
                 src={posts[0].images[0]}
                 alt="First Post"
-                className="post-image"
+                className="post2-image"
               />
               <Link to={`/viewUserPost/${post._id}`}>
               <button>View</button>

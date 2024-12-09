@@ -48,8 +48,8 @@ const AddData = () => {
   return (
     <div className="add-data-container">
       <form className="add-data-form" onSubmit={handleSubmit}>
-        <h2>Add Your Details</h2>
-        <div className="form-group">
+        <h2>𝓓𝓔𝓣𝓐𝓘𝓛𝓢 𝓕𝓞𝓡𝓜</h2>
+        <div className="form1-group">
           <label htmlFor="nickname">Nickname</label>
           <input
             type="text"
@@ -60,7 +60,7 @@ const AddData = () => {
             required
           />
         </div>
-        <div className="form-group">
+        <div className="form1-group">
           <label htmlFor="dob">Date of Birth</label>
           <input
             type="date"
@@ -71,7 +71,7 @@ const AddData = () => {
             required
           />
         </div>
-        <div className="form-group">
+        <div className="form1-group">
           <label htmlFor="note">Note</label>
           <input
             type="text"

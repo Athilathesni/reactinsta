@@ -46,7 +46,7 @@ const EditPost = () => {
     <div className="edit-post-container">
       <h1>Edit Post</h1>
         <form onSubmit={handleSubmit} className="edit-post-form">
-          <div className="form-group">
+          <div className="form3-group">
             <label htmlFor="caption">Caption:</label>
             <input
               type="text"
@@ -56,7 +56,7 @@ const EditPost = () => {
               required
             />
           </div>
-          <div className="form-group">
+          <div className="form3-group">
             <label>Current Images:</label>
             <div className="current-images">
               {images.map((img, index) => (
@@ -69,7 +69,7 @@ const EditPost = () => {
               ))}
             </div>
           </div>
-          <div className="form-group">
+          <div className="form3-group">
             <label htmlFor="images">Add New Images:</label>
             <input
               type="file"

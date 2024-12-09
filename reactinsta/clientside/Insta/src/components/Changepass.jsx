@@ -31,11 +31,11 @@ const ChangePass = () => {
     <div className="change-pass-container">
       <h1>Change Password</h1>
       <form onSubmit={handleSubmit}>
-        <div className="form-group">
+        <div className="form2-group">
           <label>New Password:</label>
           <input  type="password"  name="pwd" value={formData.newPassword} onChange={handleChange} required placeholder="Enter new password"/>
         </div>
-        <div className="form-group">
+        <div className="form2-group">
           <label>Confirm New Password:</label>
           <input  type="password"  name="cpwd"  value={formData.confirmPassword}onChange={handleChange}  required  placeholder="Confirm new password"  />
         </div>

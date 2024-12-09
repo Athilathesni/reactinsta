@@ -15,6 +15,7 @@
   
   .register-container {
     width: 350px;
+    height: 550px;
     background-color: #fff;
     padding: 30px;
     border-radius: 10px;
@@ -29,7 +30,8 @@
   
   .register-header h1 {
     font-size: 1.8rem;
-    margin-bottom: 5px;
+    margin-bottom: 50px;
+    margin-top: 20px;
   }
   
   .register-header p {
@@ -37,18 +39,18 @@
     color: #666;
   }
   
-  .forms-group {
+  /* .forms-group {
     margin-bottom: 20px;
-  }
+  } */
   
-  .forms-group label {
+  /* .forms-group label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-  }
+  } */
   
   .forms-group input {
-    width: 100%;
+    width: 290px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -59,15 +61,29 @@
   .btn-submit {
     width: 100%;
     padding: 10px;
-    background-color: #0c188a;
+    background-color:  #53bdeb;
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-weight: bold;
     cursor: pointer;
+    margin-top: 60px;
     transition: background-color 0.3s ease;
   }
-  
+  .con1{
+    margin-top: 30px;
+    color: #5e5b5b;
+    font-size: 12px;
+  }
+  .con2{
+    margin-top: 20px;
+    color: #5e5b5b;
+    font-size: 12px;
+  }
+  .le2{
+    color: #0517bb;
+  }
   @media (max-width: 400px) {
     .register-container {
       width: 90%;

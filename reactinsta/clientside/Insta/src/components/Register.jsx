@@ -39,11 +39,11 @@ const Register = () => {
     <div className="register-page">
       <div className="register-container">
         <div className="register-header">
-          <h1>Register Form</h1>
+          <h1>𝖎𝖓𝖘𝖙𝖆𝖗𝖌𝖗𝖆𝖒</h1>
         </div>
         <form onSubmit={handleSubmit} method="post">
           <div className="forms-group">
-            <label>Username</label>
+            {/* <label>Username</label> */}
             <input
               type="text"
               name="username"
@@ -54,7 +54,7 @@ const Register = () => {
             />
           </div>
           <div className="forms-group">
-            <label>Password</label>
+            {/* <label>Password</label> */}
             <input
               type="password"
               name="pwd"
@@ -65,18 +65,24 @@ const Register = () => {
             />
           </div>
           <div className="forms-group">
-            <label>Confirm Password</label>
+            {/* <label>Confirm Password</label> */}
             <input
               type="password"
               name="cpwd"
               value={formData.cpwd}
               onChange={handleChange}
-              placeholder="Re-enter your password"
+              placeholder="Confirm your password"
               required
             />
           </div>
+          <div className="con1">
+          People who use our service may have uploaded your contact information to Instagram.<span className="le2"> Learn More</span>
+          </div>
+          <div className="con2">
+          By signing up, you agree to our <span className="le2"> Terms , Privacy Policy</span> and <span className="le2"> Cookies Policy .</span>
+          </div>
           <button type="submit" className="btn-submit">
-            Create Account
+            Sign up
           </button>
         </form>
       </div>

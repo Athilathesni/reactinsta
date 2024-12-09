@@ -30,7 +30,7 @@ const Verify = () => {
 <div className="email">
 <h2 className="h2">Email Verification</h2>
 <form onSubmit={handleSubmit}>
-  <div className="form-group">
+  <div className="form6-group">
     <input className="infor" type="email" id="email" name="email"  value={email}  onChange={handleChange} placeholder="Enter your email" />
   </div>
   <button type="submit" className="btnv">Verify</button>
